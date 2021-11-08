@@ -15,4 +15,9 @@ class Resource
     {
         return data_get($this->data, $key);
     }
+
+    public function toArray()
+    {
+        return $this->data;
+    }
 }
